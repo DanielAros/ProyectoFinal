@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: #2c3e50;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+    padding: 20px 60px 20px 60px;
+    box-sizing: border-box;
+}
+    #uaq{
+        width: 90px;
+        height: 100%;
+        position: relative;
+        float: left;
+    }
+        #uaq>img{
+            width: 100%;
+            height: 100%;
+            filter: invert(100%);
+        }
+    #titulo{
+        width: calc(100% - 180px);
+        margin-top: 15px;
+        position: relative;
+        float: left;
+    }
+    h3{
+        color: white;
+    }
+    #fif{
+        width: 90px;
+        height: 100%;
+        position: relative;
+        float: left;
+        filter: invert(100%);
+    }
+        #fif>img{
+            width: 100%;
+            height: 100%;
+        }
+section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.contenedor{
+    width: 300px;
+    height: 200px;
+    padding: 80px 20px 40px 20px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    cursor: pointer;
+}
+    .contenedor>p{
+        color: white;
+        font-size: 25px;
+        text-align: center;
+    }
+    .contenedor:hover{
+        border: 4px solid #1abc9c;
+        box-sizing: border-box;
+        transition: .3s;
+    }
+    #cont_disney{
+        background: #2980b9;
+    }
+    #cont_twitter{
+        background: #8e44ad;
+    }
+    #cont_cine{
+        background: #e74c3c;
+    }
+    #cont_conciertos{
+        background: #d35400;
+    }
+    #cont_calculadora{
+        background: #c0392b;
+    }
+    #cont_tienda{
+        background: #f39c12;
+    }
+
+@media only screen and (max-width: 959px){
+    .contenedor{
+        width: 200px;
+        height: 200px;
+        padding: 80px 20px 40px 20px;
+        box-sizing: border-box;
+    }
+}

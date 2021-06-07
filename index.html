@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+</head>
+<body>
+    <header>
+        <div id="uaq">
+            <img src="./img/UAQ.png" alt="logoUAQ">
+        </div>
+        <div id="titulo">
+            <h3>Universidad Autónoma de Querétaro</h3>
+            <h3>Facultad de Informática</h3>
+            <h3>Desarrollo de Sistemas en Internet</h3>
+            <h3>Proyecto Final</h3>
+        </div>
+        <div id="fif">
+            <img src="./img/FIF.png" alt="logoFIF">
+        </div>
+    </header>
+    <section>
+        <div class="contenedor" id="cont_disney" onclick="redireccionar(1)">
+            <p>Disney+</p>
+        </div>
+        <div class="contenedor" id="cont_twitter" onclick="redireccionar(2)">
+            <p>Twitter</p>
+        </div>
+        <div class="contenedor" id="cont_cine" onclick="redireccionar(3)">
+            <p>Flexbox (Cine)</p>
+        </div>
+    </section>
+    <section>
+        <div class="contenedor" id="cont_conciertos" onclick="redireccionar(4)">
+            <p>Conciertos</p>
+        </div>
+        <div class="contenedor" id="cont_calculadora" onclick="redireccionar(5)">
+            <p>Calculadora</p>
+        </div>
+        <div class="contenedor" id="cont_tienda" onclick="redireccionar(6)">
+            <p>Tienda</p>
+        </div>
+    </section>
+</body>
+
+<script>
+    function redireccionar(num){
+        switch(num){
+            case 1:
+                window.location.href = "./Disney+/index.html";
+                break;
+            case 2:
+                window.location.href = "./Twitter/index.html";
+                break;
+            case 3:
+                window.location.href = "./Cine/index.html";
+                break;
+            case 4:
+                window.location.href = "./Concierto/index.html";
+                break;
+            case 5:
+                window.location.href = "./Calculadora/index.html";
+                break;
+            case 6:
+                window.location.href = "./Tienda/index.html";
+                break;
+
+        }
+    }
+</script>
+</html>
