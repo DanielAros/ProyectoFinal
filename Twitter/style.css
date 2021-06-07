@@ -1,0 +1,391 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* ########### Estilos de la sección izquierda #########*/
+#seccion_izquierda{
+    width: 23%;
+    height: 628px;
+    position: relative;
+    float: left;
+    border-right: 1px solid #EBEEF0;
+    box-sizing: border-box;
+}
+    #logo{
+        width: 100%;
+        height: 40px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+        padding-left: 45px;
+        box-sizing: border-box;
+    }
+        #logo>img{
+            height: 100%;
+        }
+    nav{
+        width: 100%;
+        padding-left: 45px;
+        box-sizing: border-box;
+    }
+        ul{
+            list-style: none;
+        }
+        li{
+            margin-bottom: 22px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        #contenedor_imgPerfil{
+            width: 28px;
+            height: 28px;
+            position: relative;
+            margin-right: 12px;
+            float: left;
+            background: rosybrown;
+            border-radius: 50px;
+        }
+            #contenedor_imgPerfil>img{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                float: left;
+                border-radius: 50px;
+            }
+        li>img{
+            height: 25px;
+            margin-right: 15px;
+            vertical-align: middle; /*Alinea el texto verticalmente a la mitad de la imagen */
+        }
+        #boton_tweet{
+            margin-left: 35px;
+            margin-right: 35px;
+            width: calc(100% - 70px);
+            height: 45px;
+            border-radius: 20px;
+            box-sizing: border-box;
+            border-style: none;
+            background: #1DA1F2;
+            cursor: pointer;
+            color: white;
+        }
+
+/* ########### Estilos de la sección Principal #########*/
+#seccion_principal{
+    width: 44%;
+    background: #F7F9FA;
+    position: relative;
+    float: left;
+    border-right: 1px solid #EBEEF0;
+    box-sizing: border-box;
+}
+    header{
+        width: 100%;
+        height: 65px;
+        padding: 20px 10px 20px 10px;
+        box-sizing: border-box;
+        background: white;
+        border-bottom: 1px solid #EBEEF0;
+    }
+        header>p{
+            position: relative;
+            float: left;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        header>img{
+            position: relative;
+            float: right;
+            height: 100%;
+        }
+    #contenedor_tweetPerfil{
+        width: 100%;
+        height: 90px;
+        background: white;
+        border-bottom: 1px solid #EBEEF0;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+    }
+        .contenedor_fotoPerfil{
+            position: relative;
+            float: left;
+            width: 80px;
+            height: 100%;
+            padding: 6px 15px 0px 15px;
+            box-sizing: border-box;
+        }
+            .fotoPerfil{
+                width: 50px;
+                height: 50px;
+                background: sienna;
+                border-radius: 50px;
+            }
+                .fotoPerfil>img{
+                    width: 50px;
+                    height: 50px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                }
+        #contenedor_escribirEstado{
+            width: calc(100% - 80px);
+            height: 45px;
+            position: relative;
+            float: left;
+            border-style: none;
+        }
+        #contenedor_botones_tweetPerfil{
+            width: calc(100% - 80px);
+            height: calc(100% - 45px);
+            position: relative;
+            float: left;
+            padding: 0px 10px 0px 5px;
+            box-sizing: border-box;
+        }
+            #contenedor_iconos_tweetPerfil{
+                height: 100%;
+                position: relative;
+                float: left;
+                padding: 11px 0px 11px 0px;
+                box-sizing: border-box;
+            }
+                #contenedor_iconos_tweetPerfil>img{
+                    height: 100%;
+                    margin-right: 15px;
+                    float: left;
+                    position: relative;
+                    cursor: pointer;
+                }
+            #contenedor_botones_tweetPerfil>input{
+                width: 80px;
+                height: calc(100% - 10px);
+                margin-top: 5px;
+                position: relative;
+                float: right;
+                border-radius: 20px;
+                background: #1DA1F2;
+                color: white;
+                border: none;
+                cursor: pointer;
+            }
+    .contenedor_tweets{
+        width: 100%;
+        position: relative;
+        float: left;
+        background: white;
+        padding-right: 10px;
+        border-bottom: 1px solid #EBEEF0;
+        box-sizing: border-box;
+    }
+        .contenedor_nombreUsuario{
+            width: calc(100% - 80px);
+            height: 20px;
+            margin-top: 10px;
+            position: relative;
+            float: left;
+        }
+            .nombreUsuario{
+                font-weight: bold;
+                position: relative;
+                float: left;
+                cursor: pointer;
+            }
+            .identificadorUsuario{
+                position: relative;
+                color: #7e8a96;
+                float: left;
+                margin-left: 3px;
+
+            }
+            .contenedor_nombreUsuario>img{
+                height: 100%;
+                position: relative;
+                margin-right: 10px;
+                float: right;
+                cursor: pointer;
+            }
+        .contenedor_infoTweet{
+            width: calc(100% - 80px);
+            position: relative;
+            float: right;
+            margin-bottom: 5px;
+        }
+            .hashtag{
+                width:min-content;
+                color: #1DA1F2;
+                cursor: pointer;
+            }
+            .contenedor_infoTweet>img{
+                width: 100%;
+                height: 230px;
+                margin-top: 5px;
+                border-radius: 15px;
+                cursor: pointer;
+            }
+        .contenedor_iconos_tweets{
+            width: calc(100% - 80px);
+            height: 30px;
+            position: relative;
+            float: right;
+            padding: 8px 0px 5px 0px;
+            box-sizing: border-box;
+            margin-bottom: 7px;
+        }
+            .cont_img_icon_tweets{
+                position: relative;
+                float: left;
+                height: 100%;
+                color: #7e8a96;
+                margin-right: 100px;
+            }
+            .cont_img_icon_tweets>img{
+                height: 100%;
+                position: relative;
+                float: left;
+                margin-right: 5px;
+                cursor: pointer;
+                vertical-align: middle;
+            }
+            .ultimo{
+                margin-right: 0px !important;
+            }
+
+/* ########### Estilos de la sección derecha #########*/
+#seccion_derecha{
+    width: 33%;
+    position: relative;
+    float: left;
+    background: white;
+    padding: 10px 50px 0px 20px;
+    box-sizing: border-box;
+}
+    #contenedor_buscar{
+        width: 100%;
+        height: 40px;
+        background: #EBEEF0;
+        box-sizing: border-box;
+        border-radius: 20px;
+    }   
+        #contenedor_buscar>img{
+            width: 35px;
+            height: 100%;
+            position: relative;
+            float: left;
+            margin-left: 4px;
+            padding: 13px 7px 14px 9px;
+            box-sizing: border-box;
+            cursor: pointer;
+        }
+        #contenedor_buscar>input{
+            width: calc(100% - 47px);
+            height: 100%;
+            position: relative;
+            float: left;
+            box-sizing: border-box;
+            border-style: none;
+            border-radius: 0px 20px 20px 0px;
+            background: #EBEEF0;
+        }
+    #contenedorPrincipal_tendencias{
+        width: 100%;
+        height: 480px;
+        margin-top: 10px;
+        background: #F5F8FA;
+        border: 1px solid #EBEEF0;
+        border-radius: 15px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+        #titulo_tendencias{
+            width: 100%;
+            height: 35px;
+            border-bottom: 1px solid #EBEEF0;
+            box-sizing: border-box;
+            font-weight: bold;
+            padding: 0px 10px 0px 10px;
+            font-size: 20px;
+        }
+            #titulo_tendencias>img{
+                position: relative;
+                float: right;
+                height: 100%;
+                padding: 3px 0px 12px 0px;
+                box-sizing: border-box;
+                cursor: pointer;
+            }
+        .contenedor_tendencia{
+            width: 100%;
+            padding: 8px 10px 6px 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #EBEEF0;
+            position: relative;
+            float: left;
+        }
+            .p_tipoTreding{
+                font-size: 14px;
+                margin-bottom: 5px;
+                color: #8897A5;
+            }
+            .cont_infoTendenciaActual{
+                width: 100%;
+                height: 75px;
+                margin-top: 5px;
+                position: relative;
+                float: left;
+                border: 1px solid #d1d5d8;
+                border-radius: 15px;
+                margin-bottom: 5px;
+                cursor: pointer;
+            }
+                .info_tendencia{
+                    width: 280px;
+                    height: 100%;
+                    padding: 10px;
+                    text-align: justify;
+                    box-sizing: border-box;
+                    position: relative;
+                    float: left;
+                }
+                    .p_titulo_infoTendencia{
+                        color: #7e8a96;
+                    }
+                .cont_img_tendencia{
+                    width: calc(100% - 280px);
+                    height: 100%;
+                    position: relative;
+                    float: right;
+                    border-radius: 0px 15px 15px 0px;
+                }
+                    .cont_img_tendencia>img{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 0px 15px 15px 0px;
+                    }
+            .p_numTweets{
+                color: #7e8a96;
+                margin-bottom: 2px;
+                font-size: 14px;
+            }
+            .p_numPeopleTweeting{
+                font-size: 12px;
+                color: #7e8a96;
+            }
+            #contenedorPrincipal_tendencias>p{
+                position: relative;
+                float: left;
+                margin-top: 10px;
+                padding-left: 10px;
+                color: #1DA1F2;
+                cursor: pointer;
+            }
+    #contenedor_follow{
+        width: 100%;
+        height: 40px;
+        background: #F5F8FA;
+        position: relative;
+        float: left;
+        margin-top: 40px;
+        border: 1px solid #EBEEF0;
+        border-radius: 15px 15px 0px 0px;
+        padding: 8px 10px 0px 10px;
+        box-sizing: border-box;
+    }

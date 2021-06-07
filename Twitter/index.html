@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter</title>
+</head>
+<body>
+    <section id="seccion_izquierda">
+        <div id="logo">
+            <img src="./img/icon_logo.png" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><img src="./img/icon_home.png" alt="">Home</li>
+                <li><img src="./img/icon_explore.png" alt="">Explore</li>
+                <li><img src="./img/icon_notificacion.png" alt="">Notifications</li>
+                <li><img src="./img/icon_mensajes.png" alt="">Messages</li>
+                <li><img src="./img/icon_bookmarks.png" alt="">Bookmarks</li>
+                <li><img src="./img/icon_lista.png" alt="">Lists</li>
+                <li>
+                    <div id="contenedor_imgPerfil">
+                        <img src="./img/fotoPerfil.jpg" alt="">
+                    </div> 
+                    Profile
+                </li>
+                <li><img src="./img/icon_more.png" alt="">More</li>
+            </ul>
+        </nav>
+        <input type="button" value="Tweet" id="boton_tweet">
+
+    </section>
+    <section id="seccion_principal">
+        <header>
+            <p>Home</p>
+            <img src="./img/icon_estrellas.png" alt="">
+        </header>
+        <div id="contenedor_tweetPerfil">
+            <div class="contenedor_fotoPerfil">
+                <div class="fotoPerfil">
+                    <img src="./img/fotoPerfil.jpg" alt="">
+                </div>
+            </div>
+            <input type="text" name="" id="contenedor_escribirEstado" placeholder="What´s happening?">
+            <div id="contenedor_botones_tweetPerfil">
+                <div id="contenedor_iconos_tweetPerfil">
+                    <img src="./img/icon_img.png" alt="">
+                    <img src="./img/icon_gif.png" alt="">
+                    <img src="./img/icon_bar.png" alt="">
+                    <img src="./img/icon_emoji.png" alt="">
+                </div>
+                <input type="button" value="Tweet">
+            </div>
+        </div>
+        <div class="contenedor_tweets"> <!--Este div es para los twets de las personas que se mostraran en su inicio-->
+            <div class="contenedor_fotoPerfil">
+                <div class="fotoPerfil">
+                    <img src="./img/perfilBrie.jpg" alt="" h>
+                </div>
+            </div>
+            <div class="contenedor_nombreUsuario">
+                <div class="nombreUsuario">Brie</div>
+                <div class="identificadorUsuario">@Sktch_ComedyFan · 3m</div>
+                <img src="./img/icon_flecha.png" alt="">
+            </div>
+            <div class="contenedor_infoTweet">
+                <p>Giving standup comedy a go. Open mic starts at 7, hit me up if you want ticket <div class="hashtag">#heregoesnothing</div></p>
+            </div>
+            <div class="contenedor_iconos_tweets">
+                <div class="cont_img_icon_tweets"><img src="./img/icon_comentario.png" alt="">1</div>
+                <div class="cont_img_icon_tweets"><img src="./img/icon_retewt.png" alt=""></div>
+                <div class="cont_img_icon_tweets"><img src="./img/icon_like.png" alt="">8</div>
+                <div class="cont_img_icon_tweets ultimo"><img src="./img/icon_subir.png" alt=""></div>
+            </div>
+        </div>
+        <div class="contenedor_tweets"> <!--Este div es para los twets de las personas que se mostraran en su inicio-->
+            <div class="contenedor_fotoPerfil">
+                <div class="fotoPerfil">
+                    <img src="./img/perfilHarold.jpg" alt="" h>
+                </div>
+            </div>
+            <div class="contenedor_nombreUsuario">
+                <div class="nombreUsuario">Harold</div>
+                <div class="identificadorUsuario">@h_wang88 · 10m</div>
+                <img src="./img/icon_flecha.png" alt="">
+            </div>
+            <div class="contenedor_infoTweet">
+                <p>Vacation is going great!</p>
+                <img src="./img/atardecer.jpg" alt="">
+            </div>
+            <div class="contenedor_iconos_tweets">
+                <div class="cont_img_icon_tweets"><img src="./img/icon_comentario.png" alt="">3</div>
+                <div class="cont_img_icon_tweets"><img src="./img/icon_retewt.png" alt="">5</div>
+                <div class="cont_img_icon_tweets"><img src="./img/icon_like.png" alt="">14</div>
+                <div class="cont_img_icon_tweets ultimo"><img src="./img/icon_subir.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section id="seccion_derecha">
+        <div id="contenedor_buscar">
+            <img src="./img/icon_search.png" alt="">
+            <input type="text" name="" id="" placeholder="Search Twitter">
+        </div>
+        <div id="contenedorPrincipal_tendencias">
+            <div id="titulo_tendencias">
+                Trends for you 
+                <img src="./img/icon_config.png" alt="">
+            </div>
+            <div class="contenedor_tendencia">
+                <p class="p_tipoTreding">Treding worldwide</p>
+                <h4>#BreakingNews</h4>
+                <div class="cont_infoTendenciaActual">
+                    <div class="info_tendencia">
+                        <p class="p_titulo_infoTendencia">Space</p>
+                        <p>Lunar photography improves the discovery of the moon</p>
+                    </div>
+                    <div class="cont_img_tendencia">
+                        <img src="./img/Luna.jpg" alt="">
+                    </div>
+                </div>
+                <p class="p_numPeopleTweeting">10,094 people are Tweeting about this</p>
+            </div>
+            <div class="contenedor_tendencia">
+                <p class="p_tipoTreding">Treding worldwide</p>
+                <h4>#WorldNews</h4>
+                <p class="p_numTweets">125K Tweets</p>
+                <p class="p_numPeopleTweeting">5,094 people are Tweeting about this</p>
+            </div>
+            <div class="contenedor_tendencia">
+                <p class="p_tipoTreding">Treding worldwide</p>
+                <h4>#BreakingNews</h4>
+                <div class="cont_infoTendenciaActual">
+                    <div class="info_tendencia">
+                        <p class="p_titulo_infoTendencia">Animals</p>
+                        <p>These cats are ready for #internationalCatDay</p>
+                    </div>
+                    <div class="cont_img_tendencia">
+                        <img src="./img/gato.jpg" alt="">
+                    </div>
+                </div>
+                <p class="p_numPeopleTweeting">2,757 people are Tweeting about this</p>
+            </div>
+            <p>Show more</p>
+            <div id="contenedor_follow">
+                <h3>How to follow</h3>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
